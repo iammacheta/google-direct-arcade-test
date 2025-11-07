@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google Direct Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GPT script -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+    <script>
+        window.googletag = window.googletag || { cmd: [] };
+
+        googletag.cmd.push(function () {
+            // --- Define ad slot ---
+            googletag.defineSlot(
+                '/21974715207/web-google-direct',
+                [[300, 600], [300, 400]],
+                'div-gpt-ad-1762520968286-0'
+            )
+                .addService(googletag.pubads());
+
+            // --- Add targeting ---
+            googletag.pubads().setTargeting('bannerType', 'direct');
+
+            // --- Enable GPT services ---
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 40px;
+        }
+
+        #div-gpt-ad-1762520968286-0 {
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            background: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Google Direct Ad Test</h2>
+    <p>This page loads the ad unit: <strong>/21974715207/web-google-direct</strong></p>
+
+    <!-- Ad container -->
+    <div id="div-gpt-ad-1762520968286-0">
+    </div>
+
+    <!-- Display call -->
+    <script>
+        googletag.cmd.push(function () {
+            googletag.display('div-gpt-ad-1762520968286-0');
+        });
+    </script>
+
+</body>
+
+</html>
